@@ -2,6 +2,10 @@
 namespace userInOut {
     int x;
 }
+
+namespace simpCalc {
+    int x, y;
+}
 using namespace std;
 
 int main()
@@ -50,6 +54,19 @@ int main()
     cout << "Type out a number" << endl;
     cin >> userInOut::x;
     cout << "You entered: " << userInOut::x << endl;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Creating a simple calculator
+    cout << "Enter your first number: " << endl;
+    cin >> simpCalc::x;
+    cout << "Enter your second  number: " << endl;
+    cin >> simpCalc::y;
+    cout << "Results:" << endl
+        << "Addition: "<<simpCalc::x + simpCalc::y<< endl
+        << "Subtraction: "<<simpCalc::x - simpCalc::y<< endl
+        << "Division: "<<simpCalc::y / simpCalc::x<< endl
+        << "Multiplication: "<<simpCalc::x * simpCalc::y<< endl;
+
+
 
     return 0;
 }
