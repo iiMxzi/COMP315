@@ -1,5 +1,7 @@
 #include <iostream>
-
+namespace userInOut {
+    int x;
+}
 using namespace std;
 
 int main()
@@ -16,7 +18,7 @@ int main()
     multi
     line
     comment */
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
     //first time messing with variables
     int firstNum = 15;
     int secondNum = 3;
@@ -24,17 +26,17 @@ int main()
     cout << "First Num = " << firstNum << endl;
     cout << "Second Num = " << secondNum << endl;
     cout << "Sum = " << sum << endl;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
     string s1 = "My dog likes peanut butter";
     char c1 = 'a';
 
     cout << "String - "<< s1 << endl;
     cout << "Char - " <<c1 << endl;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
     //multiple variables
     int x = 5, y = 6, z = 50;
     cout << "Multiple variable " << x+y+z << endl;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
     int x1,y1,z1;
     x1=y1=z1=50;
     cout << "Multiple variables to one value " << x1+y1+z1 << endl;
@@ -43,7 +45,11 @@ int main()
     const int myNum = 15;
     int num1 = 5;
     cout << "Constants "<<myNum+num1<< endl;
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
+    // INPUT AND OUTPUT
+    cout << "Type out a number" << endl;
+    cin >> userInOut::x;
+    cout << "You entered: " << userInOut::x << endl;
 
     return 0;
 }
