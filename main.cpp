@@ -6,6 +6,10 @@ namespace userInOut {
 namespace simpCalc {
     int x, y;
 }
+namespace stringConcat{
+    std::string firstName = "";
+    std::string lastName = "";
+}
 using namespace std;
 
 int main()
@@ -65,8 +69,18 @@ int main()
         << "Subtraction: "<<simpCalc::x - simpCalc::y<< endl
         << "Division: "<<simpCalc::y / simpCalc::x<< endl
         << "Multiplication: "<<simpCalc::x * simpCalc::y<< endl;
+////////////////////////////////////////////////////////////////////////////////////////////////////
+    // String Concatenation & Other Shyt
+    cout << "Enter your first name: ";
+    cin >> stringConcat::firstName;
+    cout << "Enter your last name: ";
+    cin >> stringConcat::lastName;
 
+    cout << "Full Name using '+': "<<stringConcat::firstName+stringConcat::lastName<< endl;
+    cout << "Full Name using "": "<<stringConcat::firstName+" "+stringConcat::lastName<< endl;
+    cout << "Full Name using .append(): "<<stringConcat::firstName.append(stringConcat::lastName)<< endl;
 
+    //String lengths
 
     return 0;
 }
